@@ -1,0 +1,16 @@
+#!/bin/sh
+
+mount -t devtmpfs devtmpfs /dev
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+
+hostname embedded-arm
+
+echo
+echo "================================"
+echo " Embedded Linux Lab 1"
+echo " BusyBox ARMv7 RootFS"
+echo "================================"
+echo "Hostname: $(hostname)"
+echo
+
